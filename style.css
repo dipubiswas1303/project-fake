@@ -143,19 +143,211 @@ nav ul.nav-links li a:hover {
 /* About Section */
 #about {
     padding: 50px;
-    background: #f1f1f1;
+    background: #f9f9f9;
     text-align: center;
 }
 
 #about h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: #333;
 }
 
-#about p {
+.about-description {
     font-size: 1.2em;
     max-width: 800px;
     margin: 0 auto;
+    color: #555;
+}
+
+/* About Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.about-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Team Section */
+.team-section {
+    margin-top: 60px;
+}
+
+.team-section h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h4 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Services Section */
+#services {
+    padding: 50px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.services-description {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.service-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Responsive Styles for Services */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 50px;
+    background: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-description {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Contact Form */
+.contact-form {
+    margin-top: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button.btn {
+    background-color: #f4a261;
+    padding: 12px 25px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+button.btn:hover {
+    background-color: #e76f51;
 }
 
 /* Footer Styling */

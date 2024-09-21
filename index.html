@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Responsive Home Page</title>
-    <!-- Link to the external stylesheet -->
+    <title>Responsive Home Page with Hamburger Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="logo-area">
+                <img src="logo.png" alt="Logo" class="logo-image" />
+                <div class="logo-name">Your Website Name</div>
+            </div>
+
+            <!-- Hamburger menu icon -->
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
@@ -34,5 +45,8 @@
     <footer>
         <p>&copy; 2024 Your Website Name. All Rights Reserved.</p>
     </footer>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>

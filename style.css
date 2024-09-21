@@ -18,25 +18,90 @@ header {
     padding: 15px 0;
 }
 
-nav ul {
-    list-style: none;
+nav {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between; /* Logo on the left, nav items on the right */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-nav ul li {
+/* Logo Area Styling */
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px; /* Adjust the size of the logo image */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-name {
+    font-size: 24px;
+    color: white;
+}
+
+/* Navbar Links Styling */
+nav ul.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav ul.nav-links li {
     margin: 0 15px;
 }
 
-nav ul li a {
+nav ul.nav-links li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
-nav ul li a:hover {
+nav ul.nav-links li a:hover {
     text-decoration: underline;
+}
+
+/* Hamburger Menu Styling */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul.nav-links {
+        display: none; /* Initially hide the navigation links */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+        background-color: #333;
+    }
+
+    nav ul.nav-links.active {
+        display: flex; /* Show the links when active */
+    }
+
+    nav ul.nav-links li {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        display: flex; /* Show hamburger icon on smaller screens */
+    }
 }
 
 /* Hero Section */
@@ -99,56 +164,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-}
-
-/* Responsive Styles */
-
-/* Tablets and smaller screens (max-width: 768px) */
-@media (max-width: 768px) {
-    #hero h1 {
-        font-size: 2.5em;
-    }
-
-    #hero p {
-        font-size: 1em;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
-
-/* Mobile phones (max-width: 480px) */
-@media (max-width: 480px) {
-    #hero h1 {
-        font-size: 2em;
-    }
-
-    #hero p {
-        font-size: 0.9em;
-    }
-
-    .btn {
-        padding: 8px 18px;
-    }
-
-    #about h2 {
-        font-size: 2em;
-    }
-
-    #about p {
-        font-size: 1em;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
 }
